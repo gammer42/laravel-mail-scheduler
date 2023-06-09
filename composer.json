@@ -1,0 +1,40 @@
+{
+    "name": "gammer42/laravel-mail-scheduler",
+    "description": "This project is developed for sending schedule mail",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "gammer42",
+        "laravel-mail-scheduler"
+    ],
+    "authors": [
+        {
+            "name": "Md. Salman Hider",
+            "email": "salmanencoderit@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0.2",
+        "binarcode/laravel-mailator": "dev-master",
+        "illuminate/support": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gammer42\\LaravelMailScheduler\\": "/packages/gammer42/laravel-mail-scheduler/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gammer42\\LaravelMailScheduler\\LaravelMailSchedulerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMailScheduler": "MailScheduler"
+            }
+        }
+    }
+}
